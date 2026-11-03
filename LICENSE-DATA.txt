@@ -1,0 +1,4 @@
+Data rights are separate from application source code.
+Overture Maps Foundation: https://docs.overturemaps.org/attribution/
+Road/admin geometry and derivative database: ODbL 1.0. © OpenStreetMap contributors, Overture Maps Foundation / geoBoundaries as applicable. https://www.openstreetmap.org/copyright https://opendatacommons.org/licenses/odbl/1-0/
+Vendor JS license notices are retained in vendor/.
