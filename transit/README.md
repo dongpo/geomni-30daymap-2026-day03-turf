@@ -1,6 +1,6 @@
 # Geomni：台北任意起點的大眾運輸時間地圖
 
-在地圖選擇台北市起點、出發時間、步行速度與最多搭乘次數，計算 15／30／45／60 分鐘可達的目的地格網。這是班表模型，不是即時到站或導航服務。
+GitHub Pages 展示三組預先運算的 15／30／45／60 分鐘可達格網，可切換情境與下載 GeoJSON。公開頁不連線分析 API、不提供任意點查詢。這是班表模型，不是即時到站或導航服務。
 
 ## 架構與資料
 
@@ -29,7 +29,7 @@ MapLibre + Turf（市界檢查）→ FastAPI → r5py 1.1.7 / R5 7.5.1 → OSM �
 2. 在 `GEOMNI_TRANSIT_DATA` 指向的目錄放入 `taipei.osm.pbf`、`taipei-bus.gtfs.zip`、`trtc.gtfs.zip`。
 3. 公車子集以 `python backend/prepare_gtfs.py 原始全國.zip taipei-bus.gtfs.zip` 製作。OSM 可用 osmium extract 的 complete_ways 策略裁切上述範圍。
 4. 設定 `XDG_CACHE_HOME` 至可寫快取目錄，執行 `python backend/server.py --max-memory 6G`。
-5. 開啟 http://127.0.0.1:8773/ 。
+5. API 位於 http://127.0.0.1:8773/api/isochrone；目前隨附 web/ 為預先運算展示介面，不會提交新查詢。原互動介面保留於提交 65dcfd8 的 transit/web/，本機工作目錄的完整版亦保留。
 
 `web/` 不含 TDX 憑證或原始 GTFS。只部署靜態檔至 GitHub Pages 無法提供任意點分析，另需運行後端。本地服務預設僅監聽 127.0.0.1；公開前須配置 HTTPS、存取與用量控制、資料授權及資源限制。
 
