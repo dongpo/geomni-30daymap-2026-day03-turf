@@ -1,0 +1,16 @@
+{
+  "taipei-bus": {
+    "trips_with_stop_times": 79220,
+    "missing_first_or_last_time": 0,
+    "missing_intermediate_rows": 2657675,
+    "backward_times_in_file_order": 0,
+    "min_stops_per_trip": 2
+  },
+  "trtc": {
+    "trips_with_stop_times": 5440,
+    "missing_first_or_last_time": 0,
+    "missing_intermediate_rows": 0,
+    "backward_times_in_file_order": 0,
+    "min_stops_per_trip": 1
+  }
+}

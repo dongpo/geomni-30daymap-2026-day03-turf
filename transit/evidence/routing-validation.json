@@ -1,0 +1,119 @@
+{
+  "checks": "valid nested geometries; time/location sensitivity; invalid date, midnight and speed rejected",
+  "runs": [
+    {
+      "origin": [
+        121.517,
+        25.0478
+      ],
+      "departure": "2026-11-04T08:00:00",
+      "timezone": "Asia/Taipei",
+      "window_minutes": 5,
+      "percentile": 50,
+      "walk_kmh": 4.8,
+      "max_public_transport_rides": 3,
+      "walking_limit_minutes": 20,
+      "grid_m": 300,
+      "destination_bounds": [
+        121.35,
+        24.9,
+        121.75,
+        25.25
+      ],
+      "destinations": 13586,
+      "reachable_cells": {
+        "15": 127,
+        "30": 1230,
+        "45": 3245,
+        "60": 4704
+      },
+      "compute_seconds": 14.67,
+      "feeds": [
+        "TDX Taipei/New Taipei bus subset",
+        "TRTC 20260906"
+      ],
+      "bus_intermediate_times": "missing values interpolated by R5",
+      "source_dates": [
+        "2026-11-03",
+        "2026-12-03"
+      ],
+      "live_traffic": false
+    },
+    {
+      "origin": [
+        121.517,
+        25.0478
+      ],
+      "departure": "2026-11-04T23:00:00",
+      "timezone": "Asia/Taipei",
+      "window_minutes": 5,
+      "percentile": 50,
+      "walk_kmh": 4.8,
+      "max_public_transport_rides": 3,
+      "walking_limit_minutes": 20,
+      "grid_m": 300,
+      "destination_bounds": [
+        121.35,
+        24.9,
+        121.75,
+        25.25
+      ],
+      "destinations": 13586,
+      "reachable_cells": {
+        "15": 60,
+        "30": 682,
+        "45": 1701,
+        "60": 2624
+      },
+      "compute_seconds": 15.64,
+      "feeds": [
+        "TDX Taipei/New Taipei bus subset",
+        "TRTC 20260906"
+      ],
+      "bus_intermediate_times": "missing values interpolated by R5",
+      "source_dates": [
+        "2026-11-03",
+        "2026-12-03"
+      ],
+      "live_traffic": false
+    },
+    {
+      "origin": [
+        121.5654,
+        25.0337
+      ],
+      "departure": "2026-11-04T08:00:00",
+      "timezone": "Asia/Taipei",
+      "window_minutes": 5,
+      "percentile": 50,
+      "walk_kmh": 4.8,
+      "max_public_transport_rides": 3,
+      "walking_limit_minutes": 20,
+      "grid_m": 300,
+      "destination_bounds": [
+        121.35,
+        24.9,
+        121.75,
+        25.25
+      ],
+      "destinations": 13586,
+      "reachable_cells": {
+        "15": 116,
+        "30": 937,
+        "45": 2414,
+        "60": 3769
+      },
+      "compute_seconds": 12.74,
+      "feeds": [
+        "TDX Taipei/New Taipei bus subset",
+        "TRTC 20260906"
+      ],
+      "bus_intermediate_times": "missing values interpolated by R5",
+      "source_dates": [
+        "2026-11-03",
+        "2026-12-03"
+      ],
+      "live_traffic": false
+    }
+  ]
+}

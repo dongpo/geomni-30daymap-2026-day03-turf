@@ -48,3 +48,8 @@ python3 -m http.server 8000
 ## 證據與授權
 
 查詢 SQL、核對表或結果見 `evidence/`；資料授權與歸屬見 `LICENSE-DATA.txt`，第三方程式授權保留於 `vendor/`。SQL 中的輸出路徑記錄原分析工作目錄，可依重現環境調整。內容更新：2026-11-03。
+
+
+## 新版：大眾運輸時間地圖
+
+[開啟三組真實 GTFS 等時圈範例](https://dongpo.github.io/geomni-30daymap-2026-day03-turf/transit/web/)。公開頁可查看預先完成的結果；任意點查詢需啟動 Python/R5 後端，詳見 [執行說明](transit/README.md)。原 Turf 示範保留供比較。
